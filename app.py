@@ -34,7 +34,7 @@ def get_random_riddles():
     for i in range(len(riddles)):
 
         question = unidecode(riddles[i].find('h2', attrs={'class', 'entry-title'}).find('a').text).replace("\"", "")
-        answer = unidecode(riddles[i].find('div', attrs={'class', 'su-spoiler-content su-clearfix'}).text).replace("\"", "")
+        answer = unidecode(riddles[i].find('div', attrs={'class', 'su-spoiler-content'}).text).replace("\"", "")
 
         result = {'question': question, 'answer': answer}
         results.append(result)
