@@ -1,1 +1,1 @@
-# Alexa-Skill-Random-Riddles
+# An Alexa skill that asks you a random riddle.
